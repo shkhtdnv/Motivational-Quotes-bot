@@ -76,7 +76,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text(
         """You are welcomed by a bot to send motivational phrases.
 
-This project was created by the [shkhtdnv] channel (https://t.me/shkhtdnv_path) and is a part of it. Quotes are available in English and are mostly taken from open sources (they are not copyrighted). If you want to add your quote, then write a request to [shkhtdnv Chat.](https://t.me/shkhtdnvChat)
+This project was created by the [shkhtdnv channel](https://t.me/shkhtdnv_path) and is a part of it. Quotes are available in English and are mostly taken from open sources (they are not copyrighted). If you want to add your quote, then write a request to [shkhtdnv Chat.](https://t.me/shkhtdnvChat)
 
 To help, click /help""",
         parse_mode='Markdown'
