@@ -74,20 +74,20 @@ def get_next_quote():
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Handle the /start command and send a welcome message."""
     await update.message.reply_text(
-        """Вас приветствует бот для отправки мотивационных фраз.
+        """You are welcomed by a bot to send motivational phrases.
 
-Данный проект был создан каналом [shkhtdnv](https://t.me/shkhtdnv_path) и является его частью. Цитаты присутствуют только на английском языке и по большей части берутся из открытых источников (не являются авторскими). Если вы хотите добавить свою цитату, то напишите просьбу в [shkhtdnv Chat.](https://t.me/shkhtdnvChat)
+This project was created by the [shkhtdnv] channel (https://t.me/shkhtdnv_path ) and is a part of it. Quotes are available in English and are mostly taken from open sources (they are not copyrighted). If you want to add your quote, then write a request to [shkhtdnv Chat.](https://t.me/shkhtdnvChat )
 
-Для помощи нажмите /help""",
+To help, click /help""",
         parse_mode='Markdown'
     )
 
 # Command /help
 async def help(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Handle the /help command and send a help message."""
-    await update.message.reply_text("""Нажмите /start, чтобы узнать о создателях и назначении бота.
+    await update.message.reply_text("""Click /start to learn about the creators and purpose of the bot.
 
-Нажмите /motivate, чтобы получить мотивационную цитату.""")
+Click /motivate to get a motivational quote.""")
 
 # Command /motivate
 async def motivate(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
